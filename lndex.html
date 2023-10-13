@@ -4,9 +4,15 @@
         <title>재훈의 홈페이지</title>
         <mata charset="utf-8" /> <!-- utf-8, euc-kr -->
         <meta name="keywords" content="웹퍼블리싱, 계원, html, css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body{
+                color: rgb(255, 255, 255);
+            }
+        </style>
    </head>
     <body> <!-- 본문 -->
-        <a href="./sub.html">서브페이지</a> <!-- 서브페이지 이동 -->
+        <a style="color: rgb(255, 255, 255);" href="./sub.html">서브페이지</a> <!-- 서브페이지 이동 -->
         <a href="http://www.naver.com">네이버</a>
         <a href="https://cafe.naver.com/kwdmd" target="_blank">계원디미디카페</a>
 
@@ -150,34 +156,73 @@
                          <input type="submit" value="제출">
                        
             </form>
-            <dl>
-                <dt>커리(Curry) 만들기</dt>
-                <dd>
-                    <dl>
-                        <dt>재료</dt>
-                        <dd>
-                            <ul>
-                                <li>카레가루 100g</li>
-                                <li>닭 가슴살 200g</li>
-                                <li>감자 1개</li>
-                                <li>양파 1/2개</li>
-                                <li>당근 1/2개</li>
-                            </ul>
-                        </dd>
-                        <dt>만드는 방법</dt>
-                        <dd>
-                            <ol>
-                                <li>카레 가루 8큰술에 물 6큰술을 넣어 풀어 놓는다.</li>
-                                <li>닭가슴살, 감자, 양파, 당근을 따로 중불에 살짝 볶는다.</li>
-                                <li>볶아 놓은 재료를 카레를 풀어놓은 물과 함께 냄비에 넣고<br>
-                                    물 2컵을 부은 후 15분 정도 끓인다.</li>
-                            </ol>
-                        </dd>
-                    </dl>
-                </dd>
-            </dl>
+            <section><!-- 같은 주제를 가지고 있는 내용의 모임-->
+                <h1>구획제목</h1>
+                구획1 내용
+            </section>
+            <nav><!-- 네비게이션, 페이지 이뎡 버튼모임-->
+                <ul>
+                    <li><a href="링크주소">링크버튼</a></li>
+                    <li><a href="링크주소">링크버튼</a></li>
+                </ul>
+                <a href="링크주소">링크버튼</a>
+            </nav>
+            <article> <!-- 연관성이 다소 적은 내용의 모임 -->
+                <h1>시헌짱에 담배</h1>
+                전담으로 바꾸다!!!
+            </article>
+            <aside> <!-- 연관성이 아에 없는 내용의 모임 -->
+                <h1> 우성짱 </h1>
+                우성짱이 우성짱이다!!!?
+            </aside>
 
-     <시작태그>
+            <header></header> <!--본문(body) 내의 서론-->
+            <footer></footer> <!--본문(body) 내의 결론-->
+         <canvas id="myCanvas"></canvas>
+         <script>
+                var canvas = document.getElementById("myCanvas");
+                //gat element by id 
+                //아이디 기준으로 요소 가져오기
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(25, 25, 100, 100);
+                ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+                ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+                ctx.fillStyle = "#000000";
+                ctx.beginPath(); //선그리기 시작
+                ctx.moveTo(65, 75); //펜 들어 움직이기
+                ctx.lineTo(90, 95); //선 그으며 움직이기
+                ctx.lineTo(90, 55);
+                ctx.fill(); //내부 채우기
+                
+                ctx.beginPath();
+                ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+                ctx.moveTo(260, 75);
+                ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+                ctx.moveTo(215, 65);
+                ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+                ctx.moveTo(245, 65);
+                ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+                ctx.stroke();
+         </script>
+
+         <audio controls> <!--auto-->
+            <source src="./mp3/file_example_MP3_700KB.mp3" type="audio/mpeg">
+         </audio>
+    `   <video controls>
+        <source src="mp4/file_example_MP4_480_1_5MG (1).mp4" type="video/mp4">
+    </video>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwjLBG7NPMg?si=WuHX9lt0emgEJJfh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <video width="320" height="240" controls>
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AYUdS9-riy4?si=QSH9ao3CMI60MTL9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+    
+  
+    <시작태그>
      </종료태그>
      <독랍형태그 />
 
