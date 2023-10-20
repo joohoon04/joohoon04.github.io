@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html>
+        <title>css</title>
+        <meta charset="utf-8">
+        <style>
+            body{ color: rgb(211, 78, 78);}
+            div{ 
+                color: rgb(1, 1, 153);
+                color: #000000; 
+                color: rgb(200, 120, 90);
+                color: rgb(100, 120, 90);
+            }
+            /*css 주석*/
+        </style>
+        <!--html 주석-->
+        <body>
+            <div id="di">상속</div>
+
+            <style>
+                div{
+                    background-color: lightgreen;
+                    border: solid 1px black;
+                }
+                #d2{
+                    width: 100px;
+                    height: 100px;
+                }
+            </style>
+            <div id="d2"> width height</div>
+            <style>
+                #d3{
+                    padding: 30px;
+                }
+            </style>
+            <style>
+                #d4{
+                    margin: 30px;
+                } 
+            </style>
+            <div id="d3">padding 우성</div>
+            <div id="d4">margin</div>
+            <style>
+                *{
+                    text-decoration: underline;
+                }
+                strong{ color: red;}
+                em{color: purple;}
+            </style>
+            <Strong>strong</Strong>
+            <em>em</em>
+            <strong>strong2</strong>
+
+            <style>
+                .c1{font-size: 30px;}
+                #i1{font-size: 90px;}
+            </style>
+            <div class="c1">class 시헌 selector</div>
+            <div id="i1">id 재웅 selevtor</div>
+
+            <style>
+                #d5::first-line{
+                    color: red;
+                }
+                #d5::first-letter{
+                    font-size: 50px;
+                }
+                #d5::before{ content: "우성 시작";}
+                #d5::after{ content: "끝 시헌";}
+            </style>
+            <div id="d5">
+               재웅 first line,  first line,  first line,  first line,  first line,  first line,
+                first line,  first line,  first line,  first line,  first line,  first line, 
+                first line,  first line,  first line,  first line,  first line,  first line, 
+                first line,  first line,  first line,  first line,  first line,  first line, 
+            </div>    
+    </body>
+    </html>
