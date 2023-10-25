@@ -3,3 +3,6 @@ body{
     background-color: rgb(0, 0, 0);
     /*배경- 색깔: 파랑; */
 }
+.break-spaces {
+    white-space: pre-line;
+}
