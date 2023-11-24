@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout1</title>
+        <meta charset="utf-8">
+        <style>
+            #wrap ul{}
+            header ul{}
+            #wrap>header>ul{}
+            header ul{
+                list-style: none;
+                display: flex;
+                margin: 30px 0px;
+            }
+            header li{
+                padding: 0px 10px;
+                border-right: solid 1px gray;
+            }
+            header li:last-child{
+                border: none;
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+            header h1{
+                margin: 0%;
+            }
+            header>div>img{
+                margin: 12px 0px;
+            }
+            nav ul{
+                list-style: none;
+                display: flex;
+            }
+            nav li{
+                padding: 0px 10px;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                background-color: lightgray;
+            }
+            nav h2{
+                margin: 10px 0px;
+            }
+            #content>section:nth-child(1){background-color: #98f;}
+            #content>section:nth-child(2){background-color: #5d9;}
+            #content>section:nth-child(3){background-color: #f76;}
+            #content>section:nth-child(4){background-color: #ec5;}
+            #content>section>div{
+                display: flex;
+                justify-content: center;
+            }           
+            #content>section>div>div{
+                margin: 0px 10px;
+            }
+            #content dt{
+                font-weight: bold;
+            }
+            #content dd{
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1><img src="img/logo.png"></h1>
+                <ul>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                </ul>
+                <div> <img src="./img/zoom.png" width="50px" height="50px"> </div>
+            </header>
+            <nav>
+                <h2>see Our Works</h2>
+                <ul>
+                    <li>web desing</li>
+                    <li>icons</li>
+                    <li>web desing</li>
+                    <li>web desing</li>
+                </ul>
+                <div></div>
+            </nav>
+            <div></div>
+            <div id="content">
+                    <section>
+                        <h2>web design</h2>
+                        <div>
+                            <div>
+                                <img src="./img/img1.png" />
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd>내용</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <img src="./img/img2.png" />
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd>내용</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>web design</h2>
+                        <div>
+                            <div>
+                                <img src="./img/img3.png" />
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd>내용</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <img src="./img/img4.png" />
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd>내용</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>web design</h2>
+                        <div>
+                            <div>
+                                <img src="./img/img5.png" />
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd>내용</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <img src="./img/img6.png" />
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd>내용</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>web design</h2>
+                        <div>
+                            <div>
+                                <img src="./img/img7.png" />
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd>내용</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <img src="./img/img8.png" />
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd>내용</dd>
+                                </dl>
+                            </div>
+                        </div>        
+                    </section>
+                </div>
+              <footer>
+                <div>
+                    <ul>
+                        <li>home</li>
+                        <li>about</li>
+                        <li>services</li>
+                        <li>work</li>
+                        <li>blog</li>
+                        <li>contact us</li>
+                    </ul>
+                    <p>ⓒ2023. All rights reserved.</p>
+                    <p>discription</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="footer.png"></li>
+                        <li><img src="핀터.png"></li>
+                        <li><img src="트위터.png"></li>
+                        <li><img src="g플.png"></li>
+                        <li><img src="in.png"></li>
+                        <li><img src="지구본.png"></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

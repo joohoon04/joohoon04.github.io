@@ -9,7 +9,7 @@
 
             body{ color: rgb(211, 78, 78);}
             div{ 
-                color: rgb(1, 1, 153);
+                color: rgb(255, 0, 179);
                 color: #000000; 
                 color: rgb(200, 120, 90);
                 color: rgb(100, 120, 90);
@@ -71,12 +71,272 @@
                 #d5::before{ content: "우성 시작";}
                 #d5::after{ content: "끝 시헌";}
             </style>
+           
             <div id="d5">
                재웅 first line,  first line,  first line,  first line,  first line,  first line,
                 first line,  first line,  first line,  first line,  first line,  first line, 
                 first line,  first line,  first line,  first line,  first line,  first line, 
                 first line,  first line,  first line,  first line,  first line,  first line, 
             </div>    
-           
+            <style>
+                #d6 div:first-child{
+                    color: rgb(72, 0, 255);
+                }
+                #d6 div:nth-child(2){
+                    color :aquamarine;
+                }
+                #d6 div:last-child{
+                    color: rgb(255, 9, 103);
+                }
+            </style>
+            <div id="d6">
+                <div>재웅</div>
+                <div>시헌</div>
+                <div>우성</div>
+            </div>
+            <style>
+                /*:link, :visited, :hover, :active, :focus */
+                a:link{/*링크가 있다면*/
+                    color: aqua;
+                }
+                a:visited{/*방문한적이 있다면*/
+                    color: blueviolet;
+                }
+                a:hover{/*마우스를 올리면*/
+                    color: blue;
+                }
+                a:active{/*마우스로 누르면*/
+                    color: aquamarine;
+                }
+                a:focus{/*포커스가 되면*/
+                    color: black;
+                }
+            </style>
+            <a href="https://cafe.naver.com/kwdmd">계원 카페</a>
+
+            <style>
+                #d7>span{/*자식 요소 선택자*/
+                    font-size: 40px;
+                }
+                #d7 span{/*아이 요소 선택자*/
+                    font-size: italic;
+                }
+                #d7>div>span{
+                    font-weight: bold;
+                }
+            </style>
+            <div id="d7">
+                <span>span1</span>
+                <div>
+                    <span>span2</span>
+                </div>
+            </div>
+            <style>
+                body{font-size: 13px;}
+                div{font-size: 13px;}
+                span{font-size: 13px;}
+                body,div,span{font-size: 13px;}
+            </style>
+
+            <style>
+                #d8{
+                    width: 200px;
+                    height: 200px;
+                    border: solid 2px red;
+                    border-left: solid 1px blue;
+                    border-right: solid 5px green;
+                    border-top:dotted 3px pink ;
+                    border-bottom: dashed 2px black;
+
+                    margin: 50px;
+                    margin: 50px 100px;/*상하 좌우*/
+                    margin: 0px 50px 100px 150px;/*상우 하좌*/
+                    /*위에서 시계방향*/
+                    margin-left: 0px;
+                    margin-right: 50px;
+                    margin-top: 100px;
+                    margin-bottom: 150px;
+
+                    padding: 50px ;
+                    padding: 50px 100px;
+                    padding: 0px 50px 100px 150px;
+                    padding-left: 0px;
+                    padding-right: 50px;
+                    padding-top: 100px;
+                    padding-bottom: 150px;
+                }
+            </style>
+                <div id="d8">box model</div>
+            <style>
+                #d9{
+                    position: absolute;/*절대적인*/
+                    left: 190px;
+                    top: 90px;
+
+                }
+                #d10{
+                    position: relative;/*관계형*/
+                    /*relative 인 부모는 absolute 자식의 기준이 된다*/
+                }
+            </style>
+            <div id="d10">
+                <div id="d9">absolute</div>
+            </div>
+            <style>
+                #d11{
+                    position: fixed;
+                    top: 0px;
+                    right: 0px;
+                }    
+            </style>
+            <div id="d11">fixd</div>
+            <style>
+                #d12{
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            </style>
+            <style>
+                #d12{
+                    font-family: 'Lucida Sans', Verdana, sans-serif;
+                    font-size: 60px;
+                    font-weight: bold;
+                    font-style: italic;
+                    text-align: center;
+                    margin: auto;
+                    width: 300px;
+                }
+               /* div{font: bold italic small-caps 12px /1.6px"돋음", sans-serif;} */
+            </style>
+            <div id="d12">font-family</div>
+            <style>
+                #d13{
+                    letter-spacing: 80px;
+                    line-height: 80px;
+                }
+            </style>
+            <div id="d13">letter-spacing, line-height</div>
+            <style>
+                #d14{
+                    white-space: pre;
+                }
+            </style>
+            <div id="d14">
+                a  b  c
+                d  e  f
+            </div>
+            <style>
+                ol{
+                    list-style: disc;
+                }
+            </style>
+            <ol>
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+            </ol>
+            <style>
+                #d15{
+                    min-width: 400px;
+                    max-width: 800px;
+                    border-radius: 5px;
+                    text-shadow: 2px 2px 1px red;
+                    /*가로이동,세로이동, 번짐, 색상*/
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100px;
+                }
+            </style>
+            <div id="d15">min max width min max width min max width min max width min max width
+                 min max width min max width min max width min max width </div>
+            <div id="d16"></div>
+           <!-- <ul>
+                <li><span style="font-family:serif;">serif : 삐침(장식)이 있는 글꼴 : ABCDabcd</span></li>
+                <li><span style="font-family:sans-serif;">sans-serif : 삐침(장식)이 없는 글꼴 : ABCDabcd</span></li>
+                <li><span style="font-family:cursive;">cursive : 필기체 : ABCDabcd</span></li>
+                <li><span style="font-family:fantasy;">fantasy : 판타지체 : ABCDabcd</span></li>
+                <li><span style="font-family:monospace;">monospace : 글자 폭과 간격이 일정 : ABCDabcd</span></li>
+              </ul> -->
+              <style>
+                #d16{   
+                    background-color: yellow;
+                    transition: background-color 2s,
+                    height 2s ;
+                }
+                #d16:hover{
+                    background-color: blue;
+                    height: 80px;
+                }
+              </style>
+              <div id="d16">transition</div>
+              <style>
+                @keyframes animation17{
+                    0%{background-color: white;}
+                    30%{background-color: rgb(255, 0, 255);}
+                    60%{background-color: rgb(25, 205, 5);}
+                    100%{background-color: rgb(240, 55, 55);}
+                }
+                #d17{
+                    animation-name:animation17;
+                    animation-duration: 10s;
+                }
+            </style>
+            <div id="d17">animation</div>
+            <style>
+                .col1{
+                    columns: 100px 3;
+                    /* minimum 100px, maximum 3 cols */
+                    /* 한 단이 최소 100px을 충족 가능하면 단 수가 증가함 (200px 2단, 300px 3단) */
+                    /* 최대 3단이 만들어지만 가로 길이에 상관 없이 단 수를 유지함 */
+                }
+                #px100{
+                    width: 100px;
+                    border: solid 1px black;
+                }
+            </style>
+            <div class="col1">
+            1절 - 동해물과 백두산이 마르고 닳도록
+            하느님이 보우하사 우리나라만세
+            무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+            
+            2절 - 남산위에 저 소나무 철갑을 두른듯
+            바람서리 불변함은 우리기상 일세
+            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+            
+            3절 - 가을하늘 공활한데 높고 구름없이 
+            밝은달은 우리가슴 일편단심일세
+            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+            
+            4절 - 이 기상과 이 맘으로 충성을 다하여
+            괴로우나 즐거우나 나라사랑하세
+            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+            </div>
+            
+            <div id="px100">100px</div>
+            <style>
+                #d18{
+                    display: flex; 
+                    /*표식방식 : 유연하게*/
+                }
+                #d18 div:nth-child(1){flex:1;}
+                #d18 div:nth-child(2){flex:4;}
+                #d18 div:nth-child(3){flex:9;}
+            </style>
+            <div id="d18">
+                <div>child1</div>
+                <div>child2</div>
+                <div>child3</div>
+            </div>
+            <style>
+                #d19{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            </style>
+            <div id="d19">
+                <div>child1</div>
+                <div>child2</div>
+                <div>child3</div>
+            </div>
     </body>
     </html>
