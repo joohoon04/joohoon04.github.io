@@ -1,0 +1,257 @@
+<!DOCTYPE html> <!-- 문서유형 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS 코드를 여기에 작성합니다 */
+        .wrap-text {
+    word-wrap: break-word;
+}
+
+    </style>
+    
+</head>
+</html>
+
+<html> 
+    <head> <!-- 머릿밀 -->
+        <title>재훈의 홈페이지</title>
+        <mata charset="utf-8" /> <!-- utf-8, euc-kr -->
+        <meta name="keywords" content="웹퍼블리싱, 계원, html, css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body{
+                color: rgb(255, 255, 255);
+            }
+        </style>
+   </head>
+    <body> <!-- 본문 -->
+            <a style="color: rgb(255, 255, 255);" href="./sub.html">서브페이지</a> <!-- 서브페이지 이동 -->
+            <a href="http://www.naver.com">네이버</a>
+            <a href="https://cafe.naver.com/kwdmd" target="_blank">계원디미디카페</a>
+
+            <img width="300px" height="auto" src="https://i.namu.wiki/i/DvOTdL2G0fp1nQjJSYkkkQnsajqxgQRt_aSgZcZh-n1Bn81iuDs4RnlIcjXbY4s8c1FJEndYfHDu2-b3Sr2U5w.webp" />
+            <img src="./img/mqdefault.jpg">
+            <img src="" alt="" />
+            
+            <a href="http://www.naver.com">
+            <img width="300px" height="auto" src="https://i.namu.wiki/i/DvOTdL2G0fp1nQjJSYkkkQnsajqxgQRt_aSgZcZh-n1Bn81iuDs4RnlIcjXbY4s8c1FJEndYfHDu2-b3Sr2U5w.webp" />
+            </a>
+            <h1>대한민국</h1>
+                <h2>경기도</h2>
+                    <h3>김포시</h3>
+                        <h4>풍무동</h4>
+                            <h3>길훈 4차 아파트</h3>
+                            <h2>경기도</h2>
+                                <h3>수원시</h3> 
+                                <h3>권선동</h3>
+                                <h2>권선구</h2>
+                                    <h1>미국</h1>
+                                    <h1>일본</h1>
+                                    <h1>중국</h1>
+                                    <strong>굵은 글씨로 표시</strong>
+                                    <em>기울어진 글씨</em>
+                                    <ins>텍스트의 아래쪽에 밑줄 표시</ins>
+                                    <del>텍스트의 중간에 가로줄 표시</del>
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+                <li>리스트2</li>
+            </ul>
+            <ol>
+                        <li>리스트1</li>
+                        <li>리스트2</li>
+                        <li>리스트2</li>
+                    <dl>
+                        <dt>용어1</dt>
+                        <dd>설명1</dd>
+                        <dt>용어2</dt>
+                        <dd>설명2</dd>
+                    </dl>
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td colspan="3">colspan="3"</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td colspan="2">colspan="2"</td>
+                        <td> </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>dpdpdpdp </th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <td> </td> 
+                        <td colspan="3" rowspan="2">colspan="3" rowspan="2"</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td rowspan="2">rowspan="2"</td>
+                        <td> </td>
+                        <td rowspan="2">rowspan="2"</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                </table>
+            </ol>
+            <style>
+                th, td{
+                    border: solid 1px red;
+                }
+            </style>
+            <table summary="table 기초">
+                <caption> 테이블 기초</caption>
+                <tr>
+                    <th scope="col" rowspan="2">제목1</th> <!--table header-->
+                    <th scope="col" colspan="2">제목2</th> <!--colum 열 칸-->
+                    <th scope="col">제목3</th>
+                </tr>
+                <tr>
+                    <td>내용1</td>
+                    <td>내용2</td>
+                    <td>내용3</td>
+                </tr>
+                    <thead>표제목</thead>
+                    <tbody>표본문</tbody>
+                    <tfoot>표끝</tfoot>
+            </table>
+
+            <div>블록형(blook) 구획 나누기</div>
+            <span>인라인형(inline) 구획 나누기</span>
+            <!--의미 없이 사용하기 좋은 태크-->
+            <form>
+                <label for="name_1">아이디</label>
+                <input name="name_1" type="text" placeholder="-기호없이 숫자만 입력"/>
+                <input type="password">
+
+                <input type="radio" name="p1" checked/>사과
+                <input type="radio" name="p1">배
+                <input type="radio" name="p1">딸기
+                
+                <input type="checkbox">가을
+                <input type="checkbox">겨울
+                <input type="checkbox">봄
+
+                <select><!--select box, combo box-->
+                    <option>나이스</option>
+                    <option>재웅짱</option>
+                    <option>우성짱</option>
+                    <option>시헌짱</option>
+                </select>
+                <textarea rows="10" cols="60">내용</textarea>
+                <input onclick="alert('버튼클릭');" type="button" value="버튼입니다" />
+                <button>
+                     <strong>
+                         <del>
+                 버튼입니다
+                 </button>
+                    </strong>
+                         </del>
+                         <input type="submit" value="제출">
+                       
+            </form>
+            <section><!-- 같은 주제를 가지고 있는 내용의 모임-->
+                <h1>구획제목</h1>
+                구획1 내용
+            </section>
+            <nav><!-- 네비게이션, 페이지 이뎡 버튼모임-->
+                <ul>
+                    <li><a href="링크주소">링크버튼</a></li>
+                    <li><a href="링크주소">링크버튼</a></li>
+                </ul>
+                <a href="링크주소">링크버튼</a>
+            </nav>
+            <article> <!-- 연관성이 다소 적은 내용의 모임 -->
+                <h1>시헌짱에 담배</h1>
+                전담으로 바꾸다!!!
+            </article>
+            <aside> <!-- 연관성이 아에 없는 내용의 모임 -->
+                <h1> 우성짱 </h1>
+                우성짱이 우성짱이다!!!?
+            </aside>
+
+            <header></header> <!--본문(body) 내의 서론-->
+            <footer></footer> <!--본문(body) 내의 결론-->
+         <canvas id="myCanvas"></canvas>
+         <script>
+                var canvas = document.getElementById("myCanvas");
+                //gat element by id 
+                //아이디 기준으로 요소 가져오기
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(25, 25, 100, 100)
+                ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+                ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+                ctx.fillStyle = "#000000";
+                ctx.beginPath(); //선그리기 시작
+                ctx.moveTo(65, 75); //펜 들어 움직이기
+                ctx.lineTo(90, 95); //선 그으며 움직이기
+                ctx.lineTo(90, 55);
+                ctx.fill(); //내부 채우기
+                
+                ctx.beginPath();
+                ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+                ctx.moveTo(260, 75);
+                ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+                ctx.moveTo(215, 65);
+                ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+                ctx.moveTo(245, 65);
+                ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+                ctx.stroke();
+         </script>
+
+                <audio controls> <!--auto-->
+                    <source src="./mp3/file_example_MP3_700KB.mp3" type="audio/mpeg">
+                </audio>
+                   <video controls>
+                 <source src="mp4/file_example_MP4_480_1_5MG (1).mp4" type="video/mp4">
+                </video>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwjLBG7NPMg?si=WuHX9lt0emgEJJfh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <video width="320" height="240" controls>
+                <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+                </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AYUdS9-riy4?si=QSH9ao3CMI60MTL9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+            <table summary="table 기초">
+                <caption >우성이형 소개</caption>
+                <tr> <!-- row 행 줄-->
+                    <th scope="col" rowspan="2">제목1</th> <!-- table header-->
+                    <th scope="col" colspan="2">제목2</th> <!-- colum 열 칸 -->
+                    <th scope="col">제목3</th>
+  
+    <시작태그>
+     </종료태그>
+     <독랍형태그 />
+
+     <시작태그 속성="값">내용</종료태그>
+     <독립형태그 속성="값" />
+    </body>
+</html>
+
