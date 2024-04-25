@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('img/bg1.jpg');
+    
+}
+
+.container .header{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .header img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+.container .nav > ul > li{
+    display: inline-block;
+    margin: 0 10px;
+    padding-top: 7%;
+}
+
+.container .nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-family: 'ChosunCentennial';
+}
+
+.container .nav > ul > li > a:hover{
+    color: #1fdfdf;
+}
+
+.head {
+   height: 650px;
+   border: 1px solid #ebeaec;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+   border-radius: 16px;
+   padding: 24px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+}
+
+
+
+.card {
+    width: 150px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+
+  .card .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .card:hover .hover-img {
+    display: block;
+  }
+
+  .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .card:hover .overlay {
+    opacity: 1;
+  }
+
+  .card h2, .card p {
+    font-family: 'ChosunCentennial';
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-family: 'ChosunCentennial';
+}
